@@ -3,27 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Great British Bake Off Week Quiz!</title>
+    <title>Great British Bake Off Week Survey!</title>
 </head>
+
+<!-- NOTES 
+Weeks:
+1-Cake Week
+2-Biscuit Week
+3-Bread Week
+4-Caramel Week
+5-Spice Week
+6-Pastry Week
+ -->
+
+
+
+
+
 <body style="background-color:rgb(184, 193, 228);">
-    <h1 style="color:rgb(212, 60, 124)">Which Great British Bake Off week are you?</h1>
+    <h1 style="color:rgb(212, 60, 124)">Which Great British Off week are you?</h1>
 
     <img src="gbbo.png" alt="gbbo pic" width="600">
 
-    <h3>Complete this fan-curated quiz to find out the GBBO week that most aligns with you!</h3>
+    <h3 style="color:rgb(212, 60, 124)">Complete this fan-curated survey to find out the GBBO week that most aligns with you!</h3>
 
-    <h4>Please fill out the following questions <strong>thoughtfully</strong>.</h4>
+   <form action="results.html" method="get">
+        <!-- Contact info with text & email inputs -->
+        <label for="fn">First Name:</label>
+        <input type="text" name="firstname" id="fn" placeholder="First Name">
+
+        <label for="ln">Last Name:</label>
+        <input type="text" name="lastname" id="ln" placeholder="Last Name">
+        <br>
+        <label for="eml">Email:</label>
+        <input type="email" name="email" id="eml" placeholder="name@email.com">
 
 
-    <form action="results.html">
-        <p>Do you prefer</p>
-        
+        <p>Which one of these foods do you prefer the most?</p>
+        <!-- Each option refers to a food that would be made in that week. -->
+        <input type="radio" name="food" id="danish" value="Breakfast Danish">
+        <label for="danish">Breakfast Danish</label>
+        <br>
+        <input type="radio" name="food" id="parkin" value="Parkin Cake">
+        <label for="parkin">Parkin Cake</label>
+        <br>
+        <input type="radio" name="food" id="swissroll" value="Swiss Roll">        
+        <label for="swissroll">Swiss Roll</label>
+        <br>
+        <input type="radio" name="food" id="shortbread" value="Shortbread">
+        <label for="shortbread">Shortbread</label>
+        <br>
+        <input type="radio" name="food" id="bread" value="Milk Bread">
+        <label for="bread">Milk Bread</label>
+        <br>
+        <input type="radio" name="food" id="stroop" value="Stroopwafel">
+        <label for="stroop">Stroopwafel</label>
+
+        <!-- Patience monitor using range input, sadly the label function didn't 
+            work with the appearance I wanted this input to have.-->
+        <p>Slide the scale to show your level of patience</p>
+        <p>(Zero patience)<input type="range" name="patience" id="level">(Super-duper patient)</p>
+
+        <p></p>
+        <!-- Worst nightmare in baking w/ select input-->
+         <label for="bakingnightmare">BAKING WORST <strong>NIGHTMARE</strong>:</label>
+         <select name="nightmare" id="bakingnightmare">
+            <option value="Soggy Bottom">Soggy Bottom</option>
+            <option value="Burning Show Stopper Loaf">Burning Show Stopper Loaf</option>
+            <option value="Stodgey Cake">Stodgey Cake</option>
+            <option value="Forgetting Sugar">Forgetting the Sugar</option>
+            <option value="Using a flavor Paul or Prue HATE">Using a flavor Paul or Prue HATE</option>
+            <option value="Bland Bake">Bland Bake</option>
+            <option value="Caramel isn't set">Caramel isn't set and runs</option>
+            <option value="No lamination in puff pastry">No lamination in puff pastry</option>
+         </select>
+
+        <!-- Text area for open response -->
+        <p>If you were personally invited by Paul Hollywood himself to bake him something,<br> what would it be and why?</p>
+        <textarea name="explaination" id="explaination" rows="7" cols="50"></textarea>
 
 
-
-
+ 
+        <h4 style="color:rgb(212, 60, 124)">The GBBO fandom office will analyze your responses carefully <br>and get back to you with your results in 1-3 business days.</h4>
+        <input type="submit" value="Submit Survey & See Possible Results">
 
     </form>
+
+
+
+    
     
 </body>
 </html>

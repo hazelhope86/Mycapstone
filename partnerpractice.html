@@ -8,15 +8,42 @@
     body  {
         background-image: url("https://praxilabs.com/en/blog/wp-content/uploads/2025/07/Important-Physics-Equations-in-History-1.webp");
     }
+    h1{
+        color: aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+        color:aqua;
+        background-color: rgb(0, 0, 0);
+    }
+    ul{
+        color:aqua;
+        background-color: black;
+        list-style-type:georgian;
+    }
+    form{
+        background-color: black;
+        color: orange;
+    }
+    input[type ="submit"] {
+        color:purple;
+        background-color: aqua;
+    }
+    .underline {
+        text-decoration:underline;
+    }
+    .background{
+        background-color: rgb(208, 0, 255);
+    }
     </style>
 </head>
 <body>
-    <h1><strong style="background-color: aqua; color: blue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: 900;">LINKEDIN</strong></h1>
-    <h2><strong style="color: aqua;background-color:black;">Name: Mr. D</strong></h2>
-    <h2><strong style="color: aqua;background-color:black;">Proffession: Expert Physics Teacher</strong></h2>
+    <h1 class="background">LINKEDIN</strong></h1>
+    <h2>Name: Mr. D</strong></h2>
+    <h2>Proffession: Expert Physics Teacher</strong></h2>
     <img src="https://d14u0p1qkech25.cloudfront.net/60121413_4ba0cf8b-e0f0-49e7-b15d-3a0196aa0ee6_thumbnail_250x250" alt="Mr. D pic" width="500">
-    <h2 style="color: rgb(255, 0, 187); text-decoration: wavy;">Experience:</h2>
-    <ul style="color: rgb(255, 0, 187);">
+    <h2 class="background">Experience:</h2>
+    <ul>
         <li><strong>High school teacher</strong></li>
             <ol>
                 <li>Physics</li>
@@ -24,7 +51,7 @@
                 <li>Honors Lying</li>
             </ol>
         <li>Teacher's Assistant</li>
-        <li>Master <em>chef</em></li>
+        <li class="underline">Master <em>chef</em></li>
         <li>Crow Puncher</li>
         <li>Can use AI</li>
         <li>Builder</li>
@@ -32,27 +59,27 @@
         <li>Great at lying</li>
     </ul>
     
-    <h2><a href="https://www.united.com/en/au?utm_medium=paid_search&utm_source=google&utm_campaign=GS:en-AU_BR\Core/Geo@SYD&gad_source=1&gad_campaignid=21931150750&gbraid=0AAAAAocc1E-ckXO1Vh7YXMYJsr_4xGsIs&gclid=Cj0KCQiApfjKBhC0ARIsAMiR_ItaoKHYrBtHNVSv59kj-zKNxiPoLAyRPcDSWVi6HAm8Gt1i4vZaGZgaAvZiEALw_wcB">First Step to a Mr. D Adventure</a></h2>
+    <h2 class="background"><a href="https://www.united.com/en/au?utm_medium=paid_search&utm_source=google&utm_campaign=GS:en-AU_BR\Core/Geo@SYD&gad_source=1&gad_campaignid=21931150750&gbraid=0AAAAAocc1E-ckXO1Vh7YXMYJsr_4xGsIs&gclid=Cj0KCQiApfjKBhC0ARIsAMiR_ItaoKHYrBtHNVSv59kj-zKNxiPoLAyRPcDSWVi6HAm8Gt1i4vZaGZgaAvZiEALw_wcB">First Step to a Mr. D Adventure</a></h2>
     <!-- Link goes to United Airlines Booking site -->
 
     <form method="get" action="">
-        <h2 style="color: rgb(243, 120, 14);">Sign up for Mr. D's news Letter!</h2>
-        <label for="email" style="color: rgb(243, 120, 14);">Email</label>
+        <h2>Sign up for Mr. D's news Letter!</h2>
+        <label for="email">Email</label>
         <input type="email" id="email" placeholder="francod@email.com" name="email" value="">
         <br>
-        <h3 style="color: rgb(243, 120, 14);">I want this email to get updates about:</h3>
+        <h3>I want this email to get updates about:</h3>
 
         <input type="radio" id="op1" name="update1" value="Homework">
-        <label for="op1" style="color: rgb(243, 120, 14);">Homework</label>
+        <label for="op1">Homework</label>
         <br>
         <input type="radio" id="op2" name="update2" value="My kids">
-        <label for="op2" style="color: rgb(243, 120, 14);">My kids</label>
+        <label for="op2">My kids</label>
         <br>
         
         <input type="radio" id="op3" name="update3" value="Lying Tips">
-        <label for="op3" style="color: rgb(243, 120, 14);">Lying Tip of the Day</label>
+        <label for="op3">Lying Tip of the Day</label>
         <br>
-        <input type="submit" style="color: rgb(157, 0, 255); background-color: aqua;">
+        <input type="submit">
     </form>
 </body>
 </html>
